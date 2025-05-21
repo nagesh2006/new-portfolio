@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Nagesh Tiwari-Portfolio</title>
+    <link rel="icon" href="assets/apple-touch-icon.png" type="image/png">
+    <meta name="description" content="Nagesh Tiwari's Portfolio - Full-Stack Developer, Computer Engineering Student, and Tech Enthusiast.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -14,14 +16,14 @@
         }
         /* Light mode styles */
         body.light-mode {
-            background-color: #f0f0f0; /* Light background */
+            background-color: #ededea; /* Light background */
             color: #333; /* Dark text */
         }
         .light-mode .bg-gray-900 {
             background-color: #ffffff; /* Lighter background for main sections */
         }
         .light-mode .bg-gray-800 {
-            background-color: #e0e0e0; /* Lighter background for header/footer/cards */
+            background-color: #ededea; /* Lighter background for header/footer/cards */
         }
         .light-mode .text-white {
             color: #333; /* Dark text */
@@ -48,15 +50,28 @@
     </style>
 </head>
 <body class="bg-gray-900 text-white">
+  
     <header class="bg-gray-800 py-4">
-        <div class="container mx-auto flex justify-between items-center px-4">
-            <h1 class="text-2xl font-semibold">Portfolio</h1>
-            <nav class="flex items-center space-x-6">
-                <ul class="flex space-x-6">
-                    <li><a href="#about" class="hover:text-blue-400 transition duration-300">About</a></li>
-                    <li><a href="#projects" class="hover:text-blue-400 transition duration-300">Projects</a></li>
-                    <li><a href="#achievements" class="hover:text-blue-400 transition duration-300">Achievements</a></li>
-                    <li><a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+  <div class="container mx-auto flex justify-between items-center px-4">
+    <h1 class="text-2xl font-semibold text-white">MY PORTFOLIO</h1>
+
+    <!-- Navigation and Resume Button Container -->
+    <div class="flex items-center space-x-6">
+      <!-- Navigation -->
+      <nav>
+        <ul class="flex space-x-6 text-white">
+          <li><a href="#about" class="hover:text-blue-400 transition duration-300">About</a></li>
+          <li><a href="#projects" class="hover:text-blue-400 transition duration-300">Projects</a></li>
+          <li><a href="#achievements" class="hover:text-blue-400 transition duration-300">Achievements</a></li>
+          <li><a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Download Resume Button -->
+      <a href="assets/Nagesh Tiwari - Resume.pdf" download
+        class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-full transition duration-300 flex items-center text-sm">
+        <i class="fas fa-download mr-2"></i>Download Resume
+      </a>
                 </ul>
                 <button id="theme-toggle" title="theme-change" class="p-2 rounded-full bg-gray-700 text-white hover:bg-gray-600 transition duration-300">
                     <i class="fas fa-sun" id="theme-icon"></i>
@@ -68,14 +83,15 @@
     <main class="container mx-auto px-4 py-8">
         <section id="about" class="text-center">
             <div class="avatar mx-auto mb-4 flex justify-center">
-                <img src="assets/photo.png" height="200" width="200" alt="Your Name" class="rounded-full border-4 border-gray-700">
+                <img src="assets/photo.png" height="200" width="200" alt="Nagesh Tiwari" class="rounded-full border-4 border-gray-700">
             </div>
             <h2 class="text-3xl font-semibold mb-2">Computer Engineering Student & Developer</h2>
             <p class="text-gray-300 text-lg mb-4">I build applications with Python, C#.NET, and modern web technologies that solve real-world problems.</p>
             <div class="flex justify-center space-x-4">
-                <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">View My Work</a>
-                <a href="#contact" class="bg-transparent border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white font-semibold py-3 px-6 rounded-full transition duration-300">Contact Me</a>
-            </div>
+                <a href="#projects" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">View My Work</a>
+                <a href="#contact" class="bg-transparent border-2 border-green-500 text-green-400 hover:bg-green-500 hover:text-white font-semibold py-3 px-6 rounded-full transition duration-300">Contact Me</a>
+            
+</div>
         </section>
 
         <section id="about-me" class="py-12">
@@ -83,64 +99,111 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
                 <div>
                     <p class="text-gray-300 text-lg mb-4 text-left">
-                        Hello! My Self Nagesh Tiwari. I'm a passionate Full-Stack Developer with experience building web and desktop applications that
-                        solve real-world problems.
+                        Hey there! I'm Nagesh Tiwari — a passionate Full-Stack Developer who finds joy in turning complex problems into clean, efficient code (and occasionally, caffeine into code too).
                     </p>
                     <p class="text-gray-300 text-lg mb-4 text-left">
-                        Currently pursuing a Bachelor of Engineering in Computer Engineering at Aldel Education Trust's St John
-                        College of Engineering and Management. I have developed applications like "Fair Share" for expense
-                        tracking and worked as a Backend Developer at StyleForge AI.
+                        I’m currently pursuing a Bachelor of Engineering in Computer Engineering at Aldel Education Trust’s St. John College of Engineering and Management. My journey has led me to build meaningful applications like Fair Share, a tool that helps track shared expenses without wrecking friendships. I’ve also gained hands-on experience as a Backend Developer at StyleForge AI, where I helped shape robust and scalable systems.
+
+My toolbox includes C/C++, Python, JavaScript, and frameworks for Web Development and Game Development (shoutout to Godot!). I enjoy blending creativity with code to build things that are both useful and fun.
                     </p>
                     <p class="text-gray-300 text-lg mb-4 text-left">
-                        When I'm not coding, you can find me participating in technical paper presentations and game jams. I
-                        believe in continuous learning and am currently exploring various technologies in web and game
-                        development.
+                        When I’m not writing code, you’ll probably find me participating in technical paper presentations, competing in game jams, or wondering if “debugging” should count as a hobby. I'm a firm believer in continuous learning and currently exploring new realms in both web and game development.
+
+Let’s build something awesome—one semicolon at a time.
+
+
                     </p>
                 </div>
                 <div>
-                    <div class="grid grid-cols-2 gap-4 text-center">
-                        <div>
-                            <h4 class="text-md font-semibold text-gray-400">C/C++</h4>
-                        </div>
-                        <div>
-                            <h4 class="text-md font-semibold text-gray-400">JavaScript/Web Development</h4>
-                        </div>
-                        <div>
-                           <h4 class="text-md font-semibold text-gray-400">Python</h4>
-                        </div>
-                        <div>
-                            <h4 class="text-md font-semibold text-gray-400">Game Development (Godot)</h4>
-                        </div>
-            
-                    </div>
-                    <div class="mt-8">
-                        <h3>📍 Location</h3>
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30146.152601915608!2d72.85168825830753!3d19.183446450749084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b70c8a13c111%3A0x2e9f876e43651d92!2sMumbai%2C%20Maharashtra%20400097!5e0!3m2!1sen!2sin!4v1747754785718!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    <div class="mt-8 space-y-4">
+                <div>
+                  <h4 class="text-gray-400 mb-1">Python</h4>
+                  <div class="w-full bg-gray-700 h-3 rounded-full">
+                    <div class="bg-blue-500 h-3 rounded-full" style="width: 85%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-gray-400 mb-1">JavaScript</h4>
+                  <div class="w-full bg-gray-700 h-3 rounded-full">
+                    <div class="bg-yellow-400 h-3 rounded-full" style="width: 75%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-gray-400 mb-1">C# / .NET</h4>
+                  <div class="w-full bg-gray-700 h-3 rounded-full">
+                    <div class="bg-purple-500 h-3 rounded-full" style="width: 70%;"></div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-gray-400 mb-1">Game development(Godot)</h4>
+                  <div class="w-full bg-gray-700 h-3 rounded-full">
+                    <div class="bg-red-500 h-3 rounded-full" style="width: 80%;"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between items-start mt-8 gap-6">
+  <!-- Left side: Local video -->
+  <div class="w-1/2">
+    <h3 class="text-lg font-semibold mb-2">🎥 My Favourite Video</h3>
+    <video controls width="100%" class="rounded-xl shadow-lg">
+      <source src="assets/music.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+
+                    <div class="mt-8 flex justify-end">
+  <div>
+    <h3 class="text-lg font-semibold mb-2">📍 Location</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30146.152601915608!2d72.85168825830753!3d19.183446450749084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b70c8a13c111%3A0x2e9f876e43651d92!2sMumbai%2C%20Maharashtra%20400097!5e0!3m2!1sen!2sin!4v1747754785718!5m2!1sen!2sin"
+      width="300"
+      height="275"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="py-12">
-            <h2 class="text-3xl font-semibold text-center mb-8">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-800 rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2">Fair Share Application</h3>
-                    <p class="text-gray-300 mb-4">Python, GUI Development, Database Management</p>
-                    <p class="text-gray-400">Developed a 'Fair Share' application to simplify expense tracking and splitting among groups...</p>
-                </div>
-                <div class="bg-gray-800 rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2">StyleForge AI Backend</h3>
-                    <p class="text-gray-300 mb-4">C#.NET, SQL Server, AWS</p>
-                    <p class="text-gray-400">Developed and deployed a robust C#.NET backend for StyleForge AI, encompassing API creation...</p>
-                </div>
-                <div class="bg-gray-800 rounded-lg shadow-md p-6">
-                    <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
-                    <p class="text-gray-300 mb-4">TypeScript, React, Firebase</p>
-                    <p class="text-gray-400">A Kanban-style task management application that helps users organize projects and track progress...</p>
-                </div>
-            </div>
-        </section>
+        <section id="projects" class="py-12 bg-gray-900">
+  <h2 class="text-3xl font-bold text-center text-white mb-12">🚀 My Projects</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
+    
+    <!-- Project Card 1 -->
+    <div class="group relative bg-gray-800 rounded-xl p-6 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-neon">
+      <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-20 group-hover:opacity-40 blur-sm"></div>
+      <h3 class="text-2xl font-bold text-white mb-2 relative z-10">Fair Share Application</h3>
+      <p class="text-green-300 mb-2 relative z-10">Python, GUI Development, Database</p>
+      <p class="text-gray-300 relative z-10">Simplified expense tracking and splitting among groups...</p>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="group relative bg-gray-800 rounded-xl p-6 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-neon">
+      <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-green-400 via-blue-400 to-purple-500 opacity-20 group-hover:opacity-40 blur-sm"></div>
+      <h3 class="text-2xl font-bold text-white mb-2 relative z-10">StyleForge AI Backend</h3>
+      <p class="text-blue-300 mb-2 relative z-10">C#.NET, SQL Server, AWS</p>
+      <p class="text-gray-300 relative z-10">Robust API backend development and deployment for StyleForge AI...</p>
+    </div>
+
+    <!-- Project Card 3 -->
+    <div class="group relative bg-gray-800 rounded-xl p-6 transition duration-500 ease-in-out transform hover:-translate-y-2 hover:shadow-neon">
+      <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-yellow-400 via-pink-400 to-red-500 opacity-20 group-hover:opacity-40 blur-sm"></div>
+      <h3 class="text-2xl font-bold text-white mb-2 relative z-10">Task Management App</h3>
+      <p class="text-pink-300 mb-2 relative z-10">TypeScript, React, Firebase</p>
+      <p class="text-gray-300 relative z-10">A Kanban-style task manager to organize and track tasks visually...</p>
+    </div>
+
+  </div>
+</section>
+
+
 
         <section id="achievements" class="py-12">
             <h2 class="text-3xl font-semibold text-center mb-8">Achievements & Certifications</h2>
@@ -174,7 +237,7 @@
                 <a href="https://www.instagram.com/echo_nightshade/" class="hover:text-blue-400 transition duration-300" title="Instagram">
                 <i class="fab fa-instagram text-xl"></i>
                 </a>
-                <a href="" class="hover:text-blue-400 transition duration-300" title="Email">
+                <a href="mailto:nageshti2808@gmail.com" class="hover:text-blue-400 transition duration-300" title="Email">
                 <i class="far fa-envelope text-xl"></i>
                 </a>
             </div>
@@ -182,30 +245,40 @@
             <div class="bg-gray-800 rounded-lg shadow-md p-6 text-center">
                 <h3 class="text-xl font-semibold mb-4">Random Programming Joke</h3>
                 <p id="joke-content" class="text-gray-300 mb-4">Loading joke...</p>
-                <button id="new-joke-btn" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">New Joke</button>
+                <button id="new-joke-btn" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">New Joke</button>
             </div>
               <div class="bg-gray-800 rounded-lg shadow-md p-6 mt-8">
                 <h3 class="text-xl font-semibold mb-4 text-left">Get in Touch</h3>
                 <p class="text-gray-300 mb-4 text-left">Have a question or want to work together? Fill out the form below and I'll get back to you as soon as possible.</p>
-                <form>
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Name *</label>
-                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" placeholder="Your Name">
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Email *</label>
-                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" placeholder="Your Email">
-                    </div>
-                    <div class="mb-4">
-                        <label for="subject" class="block text-gray-300 text-sm font-bold mb-2">Subject</label>
-                        <input type="text" id="subject" name="subject" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700" placeholder="Subject">
-                    </div>
-                    <div class="mb-4">
-                        <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Message *</label>
-                        <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-700 h-32 resize-y" placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">Send Message</button>
-                </form>
+                <form id="contact-form">
+    <div class="mb-4 hidden">
+        <!-- Honeypot field (spam bot trap) -->
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website">
+    </div>
+    <input type="text" id="name" name="name" required
+  class="shadow appearance-none border rounded w-full py-2 px-3 
+         text-white leading-tight focus:outline-none focus:shadow-outline bg-gray-700"
+  placeholder="Your Name">
+
+<input type="email" id="email" name="email" required
+  class="shadow appearance-none border rounded w-full py-2 px-3 
+         text-white leading-tight focus:outline-none focus:shadow-outline bg-gray-700"
+  placeholder="Your Email">
+
+<input type="text" id="subject" name="subject"
+  class="shadow appearance-none border rounded w-full py-2 px-3 
+         text-white leading-tight focus:outline-none focus:shadow-outline bg-gray-700"
+  placeholder="Subject">
+
+<textarea id="message" name="message" required
+  class="shadow appearance-none border rounded w-full py-2 px-3 
+         text-white leading-tight focus:outline-none focus:shadow-outline bg-gray-700 h-32 resize-y"
+  placeholder="Your Message"></textarea>
+
+    <button type="submit" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full transition duration-300">Send Message</button>
+</form>
+
             </div>
         </section>
     </main>
@@ -278,6 +351,31 @@
 
         // Fetch a new joke when the button is clicked
         newJokeBtn.addEventListener('click', fetchJoke);
+
+        // Form submission with simple validation and alert
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    // Honeypot check
+    if (document.getElementById('website').value !== "") {
+        alert("Spam detected. Submission blocked.");
+        return;
+    }
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+        alert("Please fill out all required fields.");
+        return;
+    }
+
+    // Simulate successful submission
+    alert("Thank you, " + name + "! Your message has been sent.");
+    this.reset();
+});
+
     </script>
 </body>
 </html>
